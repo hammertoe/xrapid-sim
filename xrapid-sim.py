@@ -34,7 +34,7 @@ source_amount = args.source_amount
 print("Getting order book for {} from {}".format(source_pair, source_ex.name))
 for price,amount in source_orderbook['asks']:
 
-    used_amount = min(source_amount, amount)
+    used_amount = min(source_amount, amount*price)
     xrp_bought = used_amount / price
     total_xrp_bought += xrp_bought
     source_amount -= used_amount

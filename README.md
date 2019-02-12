@@ -29,3 +29,24 @@ Total dest amount: 19369.46 MXN
 Sell trade fee: 125.90 MXN
 Net: 19243.56 MXN
 ```
+
+You can specify an alternate transport currency too, eg:
+
+```
+$ python xrapid-sim.py 4000000 indodax IDR bitso MXN --transport BTC
+Getting order book for BTC/IDR from INDODAX
++ Bought 0.08 BTC @ 50340000.0000
+Total Bought: 0.08 BTC
+Buy trade fee: 0.00 BTC
+Net: 0.08 BTC
+
+Sending the 0.08 BTC from INDODAX to Bitso
+
+Getting order book for BTC/MXN from Bitso
+- Sold 0.00 BTC @ 67880.1200
+- Sold 0.00 BTC @ 67879.7900
+- Sold 0.07 BTC @ 67877.1900
+Total dest amount: 5377.34 MXN
+Sell trade fee: 34.95 MXN
+Net: 5342.38 MXN
+```
